@@ -4,7 +4,7 @@ import { generateRandomFormattedDate } from "@/utils/generateRandomDate";
 export const defaultCard: CardProps = {
   imageUrl: "/illustration-article.svg",
   publishedDate: "Published 21 Dec 2023",
-  tags: ["Learning", "Testing"],
+  tags: ["Learning"],
   title: "HTML & CSS foundations",
   description:
     "These languages are the backbone of every website, defining structure, content, and presentation.",
