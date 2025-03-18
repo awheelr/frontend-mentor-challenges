@@ -29,7 +29,7 @@ export default function Home() {
       </div>
       <button
         onClick={addCard}
-        className="fixed bottom-4 right-4 bg-(--white) border-black outline-2 shadow-[4px_4px_0px_rgba(0,0,0,1)] w-12 h-12 p-0 rounded-full flex items-center justify-center hover:transition-transform duration-200 ease-in-out hover:scale-110 cursor-pointer"
+        className="fixed bottom-6 right-6 bg-(--white) border-black outline-2 shadow-[4px_4px_0px_rgba(0,0,0,1)] w-12 h-12 md:w-18 md:h-18 p-0 rounded-full flex items-center justify-center hover:transition-transform duration-200 ease-in-out hover:scale-110 cursor-pointer"
       >
         <svg
           className="w-8 h-8" 

@@ -32,8 +32,8 @@ export default function Card({
       />
       <div className="flex flex-col gap-[12px] my-[24px] h-[200px]">
         <div className="flex flex-row gap-[6px]">
-          {tags.map((name) => (
-            <span className="bg-[var(--yellow)] px-[12px] py-[4px] rounded-[4px] font-small-extra-bold">
+          {tags.map((name, index) => (
+            <span key={index} className="bg-[var(--yellow)] px-[12px] py-[4px] rounded-[4px] font-small-extra-bold">
               {name}
             </span>
           ))}
