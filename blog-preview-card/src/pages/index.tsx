@@ -20,7 +20,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center h-[100vh]">
+    <div className="flex justify-center h-[90vh] md:h-[100vh]">
       <div className="grid place-content-center">
         <Card {...defaultCard} />
         {cards.map((card, idx) => (
@@ -39,9 +39,9 @@ export default function Home() {
           <path
             d="M4 12H20M12 4V20"
             stroke="#000000"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </button>
