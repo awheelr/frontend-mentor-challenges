@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --white: #FFFFFF;
+  --yellow: #F4D04E;
+  --gray-500: #6B6B6B;
+  --gray-950: #111111;
+  --fade-animation: fadeIn 0.3s cubic-bezier(0.3, 0.59, 0.48, 0.98);
+  --scale-animation: scaleIn 0.5s;
+}
+
+@utility card {
+  @apply first:!rotate-0 odd:translate-y-[2px] even:translate-y-[3px] odd:rotate-2 even:rotate-4 row-1 col-1 bg-white border-black outline-2 w-[384px] h-[522px] shadow-[12px_12px_0px_-1px_rgba(0,0,0,1)]
+}
+
+
+@utility font-base-extra-bold {
+  @apply text-[20px] md:text-[24px] leading-[150%] font-[800]
+}
+
+@utility font-small-extra-bold {
+  @apply text-[14px] md:text-[14px] leading-[150%] font-[800]
+}
+
+@utility font-base-medium {
+  @apply text-[14px] md:text-[16px] leading-[150%] font-[500]
+}
+
+@utility font-small-medium {
+  @apply text-[12px] md:text-[14px] leading-[150%] font-[500]
+}
+
+@keyframes fadeIn {
+    0% {
+      translate: 0 2rem;
+    }
+    100% {
+      translate: 0 0rem;
+    }
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: scale(100%);
+    }
+    100% {
+      transform: scale(120%);
+    }
+  }
+
+body {
+  background: var(--yellow);
+}
+
+h1 {
+  color: var(--gray-950);
+}
+
+h2 {
+  color: var(--gray-950);
+}
+
+h3 {
+  color: var(--gray-950);
+}
+
+p {
+  color: var(--gray-500);
+}
