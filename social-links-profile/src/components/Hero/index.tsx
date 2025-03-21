@@ -14,7 +14,7 @@ export default function Hero() {
         <h1 className="text-(--white) text-[28px] leading-[180%] tracking-wide font-[700]">Jessica Randall</h1>
         <h2 className="text-(--green) text-[18px] leading-[150%] font-[600]">London, United Kingdom</h2>
     </div>
-    <p className="text-(--white)">"Front-end developer and avid reader."</p>
+    <p className="text-(--white)">&quot;Front-end developer and avid reader.&quot;</p>
     </div>
   );
 }

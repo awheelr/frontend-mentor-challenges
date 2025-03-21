@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export interface LinkProps {
     title: string;
     url: string;
