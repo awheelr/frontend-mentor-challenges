@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+@layer utilities {
+  @media (max-height: 500px) {
+    .h-sm-screen {
+      @apply flex-row max-w-3xl items-center
+    }
+  }
+}
+
+body {
+  background: var(--grey-900);
+  font-family: Inter, sans-serif;
+}
