@@ -26,7 +26,7 @@ export default function Hero({
         <h1 className="text-[28px] leading-[180%] tracking-wide font-[700]">
           {name}
         </h1>
-        <address className="text-(--green) text-[18px] leading-[150%] font-[600]">
+        <address className="text-(--green) text-[18px] leading-[150%] font-[600] not-italic">
           {location}
         </address>
       </section>
