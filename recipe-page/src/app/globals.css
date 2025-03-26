@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-young-serif: "Young Serif", serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  --white: hsl(0, 0%, 100%);
+  --tan: hsl(29, 53%, 90%);
+
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+@layer utilities {
+  h1 {
+    @apply font-(family-name:--font-young-serif) text-[38px] md:leading-22 tracking-normal my-4
+  }
+
+  h2 {
+    @apply font-(family-name:--font-young-serif) text-(--brown-800) text-[32px] leading-22 tracking-normal 
+  }
+
+  h3 {
+    @apply font-(family-name:--font-outfit) text-(--rose-800) text-[22px] leading-12 tracking-wide font-[700]
+  }
+
+  .card {
+    h1 {
+      @apply font-(family-name:--font-young-serif) text-[28px] md:leading-10 tracking-normal my-4
+    }
+  }
+
+  .card:hover {
+    h1 {
+      @apply text-(--brown-800)
+    }
+    @apply md:scale-[105%]
+  }
+
+  .nutrition-table {
+    td {
+      @apply py-[8px] px-[16px] border-b-[1px] border-(--stone-150)
+    }
+    tr:last-child td {
+      @apply border-b-0
+    }
+    @apply w-full table-fixed border-separate border-spacing-y-1 border-spacing-x-0 mt-6
+  }
+}
+
+body {
+  color: var(--stone-600);
+  font-family: var(--font-outfit), sans-serif;
+}
+
