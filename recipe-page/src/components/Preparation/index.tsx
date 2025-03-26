@@ -1,11 +1,11 @@
 import { PreparationTime } from "@/models/PreparationTime";
 import { RecipeTime } from "@/types/recipe";
 
-export interface PrepProps {
+export interface PreparationProps {
   recipeTime: RecipeTime;
 }
 
-export default function Prep({ recipeTime }: PrepProps) {
+export default function Preparation({ recipeTime }: PreparationProps) {
   const prepTime = new PreparationTime(
     recipeTime.cooking,
     recipeTime.preparation

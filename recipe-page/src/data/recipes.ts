@@ -312,7 +312,7 @@ const oatmealPancakes: Recipe = {
   },
 };
 
-export const recipes = [
+export const recipes: Recipe[] = [
   defaultRecipe,
   quinoaBreakfastBowl,
   avocadoToastWithPoachedEgg,

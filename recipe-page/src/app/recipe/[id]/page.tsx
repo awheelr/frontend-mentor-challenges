@@ -1,20 +1,19 @@
-// app/recipe/[id]/page.tsx
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { recipes } from "@/data/recipes";
-import Prep from "@/components/Prep";
+import Preparation from "@/components/Preparation";
 import Ingredients from "@/components/Ingredients";
 import Instructions from "@/components/Instructions";
 import Nutrition from "@/components/Nutrition";
 
 export async function generateStaticParams() {
-  return recipes.map((recipe) => ({ id: recipe.id.toString() }));
+  return recipes.map((recipe) => ({ id: recipe.id }));
 }
 
 export default async function RecipePage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
   const recipe = recipes.find((r) => r.id === id);
@@ -37,7 +36,7 @@ export default async function RecipePage({
             <h1>{recipe.title} Recipe</h1>
             <p>{recipe.description}</p>
           </header>
-          <Prep recipeTime={recipe.recipeTime} />
+          <Preparation recipeTime={recipe.recipeTime} />
           <Ingredients ingredients={recipe.ingredients} />
           <Instructions instructions={recipe.instructions} />
           <Nutrition nutritionValues={recipe.nutritionValues} />
