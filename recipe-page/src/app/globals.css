@@ -32,6 +32,12 @@
     @apply font-(family-name:--font-outfit) text-(--rose-800) text-[22px] leading-12 tracking-wide font-[700]
   }
 
+  .prep {
+    h2 {
+      @apply font-(family-name:--font-outfit) text-(--rose-800) text-[22px] leading-12 tracking-wide font-[700]
+    }
+  }
+
   .card {
     h1 {
       @apply font-(family-name:--font-young-serif) text-[28px] md:leading-10 tracking-normal my-4

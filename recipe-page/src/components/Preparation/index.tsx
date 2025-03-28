@@ -12,8 +12,8 @@ export default function Preparation({ recipeTime }: PreparationProps) {
   );
 
   return (
-    <section className="bg-(--rose-50) p-6 rounded-xl">
-      <h3>Preparation time</h3>
+    <section className="prep bg-(--rose-50) p-6 rounded-xl">
+      <h2>Preparation time</h2>
       <ul className="list-disc list-outside ml-8">
         <li className="text-[16px] marker:text-(--rose-800) p-1 pl-4">
           <b>Total</b>: Approximately {prepTime.total} minutes

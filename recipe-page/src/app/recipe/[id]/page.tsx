@@ -38,7 +38,9 @@ export default async function RecipePage({
           </header>
           <Preparation recipeTime={recipe.recipeTime} />
           <Ingredients ingredients={recipe.ingredients} />
+          <hr className="text-(--stone-150)" />
           <Instructions instructions={recipe.instructions} />
+          <hr className="text-(--stone-150)" />
           <Nutrition nutritionValues={recipe.nutritionValues} />
         </section>
       </section>
